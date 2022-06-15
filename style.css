@@ -1,0 +1,824 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0em;
+}
+
+header{
+    background-color: rgb(232, 241, 241);
+    width: 100%;
+    position: fixed; /* to keep the position of this header fixed when scrolinh down the page*/
+    z-index: 999; /* to keep this header in front and any object in page can't hide it */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9em 3.5em;
+}
+
+.logo{
+    text-decoration: none;
+    color: #4230e4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.7em; /* 1.5em = 1.5 * 16 = 24px, because i dont put default size font for bady, by dfault it is 16px*/
+
+}
+
+.navigation a{
+    color: #4230e4 ;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 1.3em;
+}
+.navigation a:hover{
+    color: #3400ad;
+}
+
+section {
+    width: 100%;
+    padding: 3.95em 0 3.25em 0;
+    background-color: aqua;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    padding: 7em;
+    display: flex;
+    align-items: center;
+    background: url(images/BG.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.main h2 {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin: 0.8em;
+    margin-left: 0px;
+    padding: 0.7em 0pxp 1.06em 0px;
+    color: #a2aeee;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 1.7em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 27px;
+    padding: 25px 0px 35px 0px;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #4230e4;
+    text-decoration: none;
+    font-size: 1.1em ;
+    font-weight: 600 ;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 1.5em;
+    margin-bottom: 2.5em;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover{
+    background-color: #2f1ce0;
+    transform: scale(1.1);
+
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 1.1em;
+
+}
+.faceb {
+    margin-left: 1.14em;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #4230e4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 0.85em;
+
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /*to arange  our cards verticaly use column*/
+    flex-wrap: wrap; /* to keep cards dimensions when browser redimension*/
+}
+
+.card {
+    background-color: #fff;
+    width: 23em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 1.5em;
+    padding: 1.1em;
+    margin: 0.75em;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #4230e4;
+    font-size: 6em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #4230e4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0.625em;
+}
+
+
+
+.projects {
+    background-color: aqua;
+    padding: 2em 0em 1em 0em;
+    margin: 0.7em 0 0.7em 0;
+    
+}
+
+.content2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /*to arange  our cards verticaly use column*/
+    flex-wrap: wrap; /* to keep cards dimensions when browser redimension*/
+}
+
+.project .content {
+    margin-top: 0.6em;
+    padding: 0.06em;
+    background-color: #fff;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 0.0625 solid #fff;
+    min-height: 11em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 1em;
+    margin: 1em;
+    transition: 00.7s ease;
+
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-image img {
+    width: 100%;
+}
+
+.project-card:hover .project-image{
+    opacity: 0.91;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-catgory {
+    font-size: 0.85em;
+    color: #000016;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 0.625em;
+    padding-top: 0.0625em;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #4230e4;
+}
+
+.more-details:hover {
+    color: #4c0ce0;
+}
+
+.project-card {
+    flex-wrap: wrap;
+}
+
+
+.card-2 {
+    background-color: #fff;
+    width: 23em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 1em;
+    padding: 1.9375em;
+    margin: 0.8125em;
+    transition: 0.7s ease;
+}
+
+.content3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /*to arange  our cards verticaly use column*/
+    flex-wrap: wrap; /* to keep cards dimensions when browser redimension*/
+}
+
+.card-2:hover {
+    transform: scale(1.1);
+}
+
+.card-contact .icon {
+    font-size: 4.5em;
+}
+.card-contact .info h3 {
+    color: #000;
+}
+.card-contact .info p {
+    font-size: 1.3em;
+}
+
+
+.footer {
+    background-color: #000016;
+    height: 1.5625em;
+    color: #fff;
+    padding: 2em;
+    padding-top: 1em;
+    padding-bottom: 2.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer-title {
+    font-size: 0.91em;
+    font-weight:600 ;
+}
+.footer-title span {
+    color: #5e6cee;
+}
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+
+/* ================================================================ */
+/* ========================== for tabelete ======================== */
+
+@media (max-width:850px) {
+
+body {
+        font-size: 16px;
+        padding: 0em;
+    }
+
+ header{
+        width: 100%;
+        position: fixed; /* to keep the position of this header fixed when scrolinh down the page*/
+        z-index: 999; /* to keep this header in front and any object in page can't hide it */
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding: 0.5em 0.75em;
+    }
+
+.logo{
+        font-weight: 700;
+        font-size: 1.9em; /* 1.5em = 1.5 * 16 = 24px, because i dont put default size font for bady, by dfault it is 16px*/
+    
+    }
+    
+    .navigation a{
+        font-size: 1.1em;
+        font-weight: 500;
+        padding-left: 0.75em;
+    }
+
+section {
+        padding: 3.25em 0.1em;
+        text-align: center;
+    }
+    
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 9em 0.15em 0em 0.15em;
+        min-height: 100vh;
+    }
+    
+    .main h2 {
+        font-size: 1.3em;
+        font-weight: 500;
+        margin-top: 5%;
+    }
+    
+    .main h2 span {
+        display: inline-block;
+        margin: 0em;
+        margin-left: 0px;
+        padding: 1.15em 0px 0.5em 0px;
+        font-size: 1.5em;
+        font-weight: 600;
+        line-height: 2em;
+        margin-bottom: 15%;
+    }
+    
+    .main h3 {
+        font-size: 1.5em;
+        font-weight:700;
+        letter-spacing: 1px;
+        margin: 3.3em 2em;
+        margin-bottom: 0%;
+        padding: 0.3em 0px 0.5em 0px;
+         line-height: 1.95em;
+         margin-bottom: 11%;
+    }
+    
+    .main-btn {
+        font-size: 1.5em ;
+        font-weight: 600 ;
+        padding: 0.9375em 2.1875em;
+        margin-bottom: 29%;
+        
+    }
+    
+    .social-icons a {
+        font-size: 1.75em;
+        padding-right: 1.1em;
+        
+    
+    }
+    .faceb {
+        margin-left: 1.8em
+    }
+    
+    .title {
+        font-size: 1.95em;
+        font-weight: 800;
+        margin-bottom: 0.85em;
+    
+    }
+
+ .content {
+        display: flex;
+        justify-content: center;
+        flex-direction:column; /*to arange  our cards verticaly use column*/
+        align-items: center;
+    }
+    
+
+    .cards {
+        padding: 2.7em 0 0 0;
+    }
+
+    .card {
+        width: 25.5em;
+        padding: 1.9em;
+        margin: 0.85em;
+        transition: 0.7s ease;
+        border-radius: 1.55em;
+        
+    }
+    
+    
+    
+    .icon {
+        font-size: 4.75em;
+        text-align: center;
+    }
+    
+    
+   
+    .info h3 {
+        font-size: 1.41em;
+        font-weight: 700;
+        margin: 10px;
+    }
+    .parag {
+        font-size: 1.1em;
+    }
+    
+    .projects {
+        padding: 1.7em 0 1.7em 0em;
+        margin-top: 1.3em;
+       
+        
+    }
+    
+    
+    .project .content {
+        margin-top: 1px;
+      
+    }
+    .content2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row; /*to arange  our cards verticaly use column*/
+        flex-wrap: wrap; /* to keep cards dimensions when browser redimension*/
+
+    }
+    
+    .project-card {
+        min-height: 9em;
+        width: 20.75em;
+        margin: 0.5em;
+          
+    }
+
+
+    
+
+    .project-image img {
+        width: 100%;
+        
+    }
+    
+    
+    .project-info {
+        padding: 0.35em;
+    }
+    
+    .project-catgory {
+        font-size: 0.9em;
+        color:#000016;
+    }
+    
+    .project-title {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 0.5em;
+        padding-top: 0.35em;
+        font-size: 0.9em;
+    }
+    
+   .content3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /*to arange  our cards verticaly use column*/
+    flex-wrap: wrap; /* to keep cards dimensions when browser redimension*/
+
+
+   }
+    .card-contact  {
+        padding: 1.7em 0 1.7em 0em;
+        margin-top: 1.3em;
+    }
+    .card-2 {
+        width: 17.5em;
+        padding: 2em 1em 2em 1em;
+        text-align: center;
+    }
+    
+   
+    .card-contact .icon {
+        font-size: 3.1em;
+    }
+    
+    .card-contact .info  {
+        margin: 0; 
+        padding-left: 0;
+        text-align: center;      
+    }
+
+    .card-contact .info .ppp {
+        font-size: 0.97em;
+        margin: O; 
+        padding: 0;
+        text-align: center;
+        
+        
+    }
+    
+    
+    .footer {
+        background-color: #000016;
+        height: 1.75em;
+        padding: 0em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .footer-title {
+        font-size: 0.75em;
+        font-weight:600 ;
+        padding-top: 0.5em;
+        margin: 0 0em 0 0.9em;
+    }
+    .footer-title span {
+        color: #5e6cee;
+    }
+
+.footer .social-icons {
+        padding-right: 0.75em;
+        
+         
+    }
+
+    .footer .social-icons a {
+        font-size: 0.75em;
+        margin: 0em;
+        padding-right: 1em;
+        padding-right: 1.1em;
+         
+    }
+    
+
+   
+}
+
+     /* ============================================================= */
+
+
+
+
+
+/* ================================================================ */
+/* ========================== for mobile ========================== */
+@media (max-width:528px) {
+
+
+body {
+        font-size: 10px;
+        padding: 0em;
+    }
+
+ header{
+        width: 100%;
+        position: fixed; /* to keep the position of this header fixed when scrolinh down the page*/
+        z-index: 999; /* to keep this header in front and any object in page can't hide it */
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding: 0.5em 0.75em;
+    }
+
+.logo{
+        font-weight: 700;
+        font-size: 1.3em; /* 1.5em = 1.5 * 16 = 24px, because i dont put default size font for bady, by dfault it is 16px*/
+    
+    }
+    
+    .navigation a{
+        font-size: 0.9em;
+        font-weight: 500;
+        padding-left: 0.25em;
+    }
+
+section {
+        padding: 3.25em 0.1em;
+        text-align: center;
+    }
+    
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 9em 0.15em 0em 0.15em;
+        min-height: 100vh;
+    }
+    
+    .main h2 {
+        font-size: 0.95em;
+        font-weight: 500;
+    }
+    
+    .main h2 span {
+        display: inline-block;
+        margin: 0em;
+        margin-left: 0px;
+        padding: 1.05em 0px 1em 0px;
+        font-size: 1.1em;
+        font-weight: 600;
+        line-height: 2em;
+    }
+    
+    .main h3 {
+        font-size: 0.95em;
+        font-weight:700;
+        letter-spacing: 1px;
+        margin: 4.5em 2em;
+        margin-bottom: 11.7px;
+        padding: 0.3em 0px 0.5em 0px;
+         line-height: 1.95em;
+    }
+    
+    .main-btn {
+        font-size: 0.95em ;
+        font-weight: 600 ;
+        
+    }
+    
+    .social-icons a {
+        font-size: 1.5em;
+        padding-right: 1.1em;
+    
+    }
+    .faceb {
+        margin-left: 1.8em
+    }
+    
+    .title {
+        font-size: 1.45em;
+        font-weight: 800;
+        margin-bottom: 0.7em;
+    
+    }
+
+ .content {
+        display: flex;
+        justify-content: center;
+        flex-direction:column; /*to arange  our cards verticaly use column*/
+        align-items: center;
+    }
+    
+
+    .cards {
+        padding: 2.7em 0 0 0;
+    }
+
+    .card {
+        width: 17.5em;
+        padding: 1.1em;
+        margin: 0.85em;
+        transition: 0.7s ease;
+    }
+    
+    
+    
+    .icon {
+        font-size: 2.9em;
+        text-align: center;
+    }
+    
+    
+   
+    .info h3 {
+        font-size: 1.1em;
+        font-weight: 700;
+        margin: 10px;
+    }
+    .parag {
+        font-size: 0.85em;
+    }
+    
+    .projects {
+        padding: 1.7em 0 1.7em 0em;
+        margin-top: 1.3em;
+       
+        
+    }
+    
+    .project .content {
+        margin-top: 1px;
+      
+    }
+    
+    .project-card {
+        min-height: 10em;
+        width: 17.5em;
+        margin: 0.8em;
+          
+    }
+
+
+    
+
+    .project-image img {
+        width: 100%;
+        
+    }
+    
+    
+    .project-info {
+        padding: 0.35em;
+    }
+    
+    .project-catgory {
+        font-size: 0.9em;
+        color: #000016;
+    }
+    
+    .project-title {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 0.5em;
+        padding-top: 0.35em;
+        font-size: 0.9em;
+    }
+    
+   
+    .card-contact  {
+        padding: 1.7em 0 1.7em 0em;
+        margin-top: 1.3em;
+    }
+    .card-2 {
+        width: 17.5em;
+        padding: 2em 1em 2em 1em;
+        text-align: center;
+    }
+    
+   
+    .card-contact .icon {
+        font-size: 3.1em;
+    }
+    
+    .card-contact .info  {
+        margin: 0; 
+        padding-left: 0;
+        text-align: center;      
+    }
+
+    .card-contact .info .ppp {
+        font-size: 0.97em;
+        margin: O; 
+        padding: 0;
+        text-align: center;
+        
+        
+    }
+    
+    
+    .footer {
+        background-color: #000016;
+        height: 1.75em;
+        padding: 0em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .footer-title {
+        font-size: 0.75em;
+        font-weight:600 ;
+        padding-top: 0.5em;
+        margin: 0 0em 0 0.9em;
+    }
+    .footer-title span {
+        color: #5e6cee;
+    }
+
+.footer .social-icons {
+        padding-right: 0.75em;
+        
+         
+    }
+
+    .footer .social-icons a {
+        font-size: 0.75em;
+        margin: 0em;
+        padding-right: 1em;
+        padding-right: 1.1em;
+         
+    }
+    
+
+}
